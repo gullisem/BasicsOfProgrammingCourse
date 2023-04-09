@@ -3,4 +3,6 @@ project(gitpro C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_library(gitpro vector.c)
+add_executable(Labs main.c Libs/data_structures/vector/vector.c Libs/data_structures/vector/vector.c)
+
+

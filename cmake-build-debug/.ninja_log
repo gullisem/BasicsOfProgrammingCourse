@@ -1,0 +1,5 @@
+# ninja log v5
+0	634	7027684170643902	CMakeFiles/Labs.dir/main.c.obj	66ada8d2a768e706
+11	477	7027684655890352	CMakeFiles/Labs.dir/main.c.obj	66ada8d2a768e706
+34	479	7027684655930255	CMakeFiles/Labs.dir/libs/data_structures/vector/vector.c.obj	3c074a5447a03c1b
+480	868	7027684659819837	Labs.exe	cab2393b0c6aad04
