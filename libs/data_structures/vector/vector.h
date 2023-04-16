@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 typedef struct vector {
     int *data;          // указатель на элементы вектора
@@ -27,5 +28,28 @@ void shrinkToFit(vector *v);
 
 //освобождает память, выделенную вектору.
 void deleteVector(vector *v);
+
+//является ли вектор пустым
+bool isEmpty(vector *v);
+
+//является ли вектор полным
+bool isFull(vector *v);
+
+//которая возвращает i-ый элемент вектора v
+int getVectorValue(vector *v, size_t i);
+
+//добавляет элемент x в конец вектора v.
+//Если вектор заполнен, увеличьте количество выделенной ему памяти в
+//2 раза, используя reserve.
+void pushBack(vector *v, int x);
+
+void test_pushBack_emptyVector();
+
+void test_pushBack_fullVector();
+
+//удаляет последний элемент из вектора
+void popBack(vector *v);
+
+void test_popBack_notEmptyVector();
 
 #endif //GITPRO_VECTOR_H
