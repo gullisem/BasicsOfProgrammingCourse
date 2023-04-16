@@ -14,13 +14,13 @@ vector createVector(size_t n) {
 }
 
 void reserve(vector *v, size_t newCapacity) {
-    v->data = (int*) realloc(v->data, newCapacity);
-    if (v->data == NULL){
+    v->data = (int *) realloc(v->data, newCapacity);
+    if (v->data == NULL) {
         fprintf(stderr, "bad alloc");
         exit(1);
     }
 
-    if(v->data > newCapacity)
+    if (v->data > newCapacity)
         v->data = newCapacity;
 
     v->capacity = newCapacity;
@@ -51,7 +51,7 @@ int getVectorValue(vector *v, size_t i) {
 }
 
 void pushBack(vector *v, int x) {
-    if(v->capacity == 0) {
+    if (v->capacity == 0) {
         reserve(v, 1);
         v->capacity++;
         v->data[0] = x;
